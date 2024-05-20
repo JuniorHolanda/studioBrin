@@ -1,0 +1,33 @@
+@import 'variable';
+@import 'animation';
+
+.container-main{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    
+    .container-mockup{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        .list-products{
+            display: flex;
+            border-radius: 10px;
+            overflow: hidden;
+            cursor: pointer;
+            animation-name: entrance-animation;
+            animation-duration: 1s;
+
+            &:hover{
+                box-shadow: 0 0 20px $glass-color;
+            }
+            .list-product-img{
+                max-width: 100px;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,60 @@
+@import '_variable.scss';
+
+.container-user {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    background-color: $tirth-color;
+    .title-app{
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+        .logo-app{
+            font-family: $strong-font;
+            font-weight: 400;
+            .studio-pro{
+                color: $fourt-color;
+                font-weight: 700;
+            }
+        }
+        .slogan-app {
+            font-family: $regular-font;
+            font-size: 1em;
+            color: $sixth-color;
+            font-style: italic;
+        }
+        
+    }
+    .user-area{
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        gap: 5px;
+        align-items: start;
+        font-family: $regular-font;
+        font-size: 1em;
+        color: $sixth-color;
+        #campName{
+            border-radius: 30px;
+            padding:5px;
+            text-align: start;
+        }
+        .input-user-name{
+            background-color: transparent;
+            border: solid $fourt-color;
+            font-size: 1em;
+            width: 100%;
+            color: $fourt-color;
+            
+            &:focus{
+                box-shadow: 0 0 20px $glass-color;
+            }
+            &::placeholder{
+                color: $fourt-color;
+            }
+        }
+    }
+}

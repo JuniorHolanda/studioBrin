@@ -1,0 +1,31 @@
+@import 'assets/style/reset.scss';
+@import 'assets/style/variable';
+@import 'assets/style/container-user';
+@import 'assets/style/container-panel';
+@import 'assets/style/global-style';
+@import 'assets/style/panels';
+@import 'assets/style/container-main';
+@import 'assets/style/mockup';
+@import 'assets/style/colors';
+
+
+.myStudioPro {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template: 1fr 2fr / 50% 50%; //linha linha / coluna coluna
+    .container-main{
+        grid-area: 1 / 1 / 3 / 2 ; //linha_inicio / coluna_inicio / linha_fim / coluna_fim;
+        background-color: $primary-color;
+    }
+
+    .container-user{
+        grid-area: 1 / 2 / 2 / 3 ;
+        
+    }
+
+    .container-panel{
+        grid-area: 2 / 2 / 3 / 3;
+        width: 100%;
+    }
+}

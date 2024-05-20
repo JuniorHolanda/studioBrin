@@ -1,0 +1,16 @@
+.color-part-vermelho {
+    filter: hue-rotate(250deg) brightness(70%) contrast(1.5);
+}
+.color-part-royal {
+    filter: hue-rotate(100deg) brightness(70%) contrast(1.5);
+}
+.color-part-amarelo {
+    filter: hue-rotate(300deg);
+}
+.color-part-roxo {
+    filter: hue-rotate(160deg) brightness(75%) contrast(1.2);
+}
+.color-part-preto {
+    filter: brightness(50%) contrast(1.5) saturate(0);
+}
+
