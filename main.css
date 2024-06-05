@@ -203,12 +203,11 @@ button, input {
 }
 .panels .control-product .btn-party-edit {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   gap: 30px;
   width: 100%;
-  height: 50%;
 }
 .panels .control-product .btn-party-edit .btn-party {
   display: flex;
@@ -219,23 +218,32 @@ button, input {
   color: #13F2F2;
   border: solid #13F2F2 3px;
   background-color: transparent;
-  padding: 20px;
-  height: 20%;
-  width: 30%;
+  padding: 5px 15px;
+  width: 27%;
   border-radius: 30px;
+  cursor: pointer;
+}
+.panels .control-product .btn-party-edit .btn-party:hover {
+  box-shadow: 0 0 20px rgba(19, 242, 242, 0.231372549);
 }
 .panels .control-product .container-btn-colors {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  padding: 10px;
-  justify-content: start;
+  justify-content: space-between;
 }
 .panels .control-product .container-btn-colors .btn-color {
-  background-color: #13F2F2;
+  display: flex;
+  justify-content: center;
   width: 30%;
-  padding: 10px;
+  align-items: center;
+  padding: 5px 15px;
   border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.panels .control-product .container-btn-colors .btn-color:hover {
+  box-shadow: 0 0 20px rgba(19, 242, 242, 0.231372549);
 }
 
 @keyframes entrance-animation {
@@ -294,24 +302,67 @@ button, input {
   border-radius: 20px;
 }
 
-.color-part-vermelho {
-  filter: hue-rotate(250deg) brightness(70%) contrast(1.5);
+[data-change-color=vermelho] {
+  filter: hue-rotate(245deg) brightness(56%) contrast(1.6);
 }
 
-.color-part-royal {
+[data-change-color=vinho] {
+  filter: hue-rotate(220deg) brightness(35%) contrast(1.4);
+}
+
+[data-change-color=royal] {
   filter: hue-rotate(100deg) brightness(70%) contrast(1.5);
 }
 
-.color-part-amarelo {
+[data-change-color=amarelo] {
   filter: hue-rotate(300deg);
 }
 
-.color-part-roxo {
+[data-change-color=roxo] {
   filter: hue-rotate(160deg) brightness(75%) contrast(1.2);
 }
 
-.color-part-preto {
+[data-change-color=lilas] {
+  filter: hue-rotate(145deg) brightness(100%) contrast(0.8);
+}
+
+[data-change-color=preto] {
   filter: brightness(50%) contrast(1.5) saturate(0);
+}
+
+.btn-color-vermelho {
+  background-color: #d32d2d;
+  color: #ffffff;
+}
+
+.btn-color-vinho {
+  background-color: #5e1729;
+  color: #ffffff;
+}
+
+.btn-color-royal {
+  background-color: #292cd8;
+  color: #ffffff;
+}
+
+.btn-color-amarelo {
+  background-color: #e7d427;
+  color: #333333;
+}
+
+.btn-color-roxo {
+  background-color: #412f85;
+  color: #ffffff;
+}
+
+.btn-color-lilas {
+  background-color: #7753a0;
+  color: #ffffff;
+}
+
+.btn-color-preto {
+  background-color: #1d1d1d;
+  color: #ffffff;
 }
 
 .myStudioPro {
