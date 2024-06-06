@@ -1,64 +1,110 @@
 //Cores dos botões
 [data-change-color="vermelho"] {
-    filter: hue-rotate(245deg) brightness(56%) contrast(1.6);
+  filter: hue-rotate(245deg) brightness(56%) contrast(1.6);
 }
 
 [data-change-color="vinho"] {
-    filter: hue-rotate(220deg) brightness(35%) contrast(1.4);
+  filter: hue-rotate(220deg) brightness(35%) contrast(1.4);
 }
 
 [data-change-color="royal"] {
-    filter: hue-rotate(100deg) brightness(70%) contrast(1.5);
+  filter: hue-rotate(100deg) brightness(70%) contrast(1.5);
 }
 [data-change-color="amarelo"] {
-    filter: hue-rotate(300deg);
+  filter: hue-rotate(300deg);
 }
 [data-change-color="roxo"] {
-    filter: hue-rotate(160deg) brightness(75%) contrast(1.2);
+  filter: hue-rotate(160deg) brightness(75%) contrast(1.2);
 }
 
 [data-change-color="lilas"] {
-    filter: hue-rotate(145deg) brightness(100%) contrast(0.8);
+  filter: hue-rotate(145deg) brightness(100%) contrast(0.8);
 }
 
 [data-change-color="preto"] {
-    filter: brightness(50%) contrast(1.5) saturate(0);
+  filter: brightness(50%) contrast(1.5) saturate(0);
 }
-
 
 //Cores dos botões
 .btn-color-vermelho {
-    background-color: #d32d2d;
-    color: #ffffff;
-}
 
-.btn-color-vinho {
-    background-color: #551626;
-    color: #ffffff;
+  &::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: #d32d2d;
+    border-radius: 30px;
+    animation: entrace-animation-horizontal 1s;
+  }
 }
 
 .btn-color-royal {
+  &::before {
+    content: "";
+    width: 20px;
+    height: 20px;
     background-color: #292cd8;
-    color: #ffffff;
+    border-radius: 30px;
+    animation-name: entrace-animation-horizontal;
+    animation-duration: 1s;
+  }
 }
 
 .btn-color-amarelo {
+  &::before {
+    content: "";
+    width: 20px;
+    height: 20px;
     background-color: #e7d427;
-    color: #333333;
+    border-radius: 30px;
+    animation-name: entrace-animation-horizontal;
+    animation-duration: 1s;
+  }
 }
 
 .btn-color-roxo {
+  &::before {
+    content: "";
+    width: 20px;
+    height: 20px;
     background-color: #412f85;
-    color: #ffffff;
+    border-radius: 30px;
+    animation-name: entrace-animation-horizontal;
+    animation-duration: 1s;
+  }
+}
+.btn-color-preto {
+  &::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: #0e0e0e;
+    border-radius: 30px;
+    animation-name: entrace-animation-horizontal;
+    animation-duration: 1s;
+  }
 }
 
 .btn-color-lilas {
+  &::before {
+    content: "";
+    width: 20px;
+    height: 20px;
     background-color: #7753a0;
-    color: #ffffff;
+    border-radius: 30px;
+    animation-name: entrace-animation-horizontal;
+    animation-duration: 1s;
+  }
 }
 
-.btn-color-preto {
-    background-color: #1d1d1d;
-    color: #ffffff;
+.btn-color-vinho {
+  &::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: #551626;
+    border-radius: 30px;
+    animation-name: entrace-animation-horizontal;
+    animation-duration: 1s;
+  }
 }
-

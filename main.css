@@ -3,7 +3,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Passion+One:wght@400;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Passion+One:wght@400;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Passion+One:wght@400;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Passion+One:wght@400;700;900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -92,6 +91,17 @@ button, input {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+@keyframes entrace-animation-horizontal {
+  0% {
+    scale: 50%;
+    opacity: 0;
+    transform: translateX(-15px);
+  }
+  100% {
+    scale: 100%;
+    transform: translateX(0);
   }
 }
 .container-panel {
@@ -194,7 +204,8 @@ button, input {
 .panels .control-product {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 30px;
   align-items: center;
   background-color: #222d38;
   padding: 30px;
@@ -202,48 +213,76 @@ button, input {
   width: 50%;
 }
 .panels .control-product .btn-party-edit {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   flex-wrap: wrap;
-  gap: 30px;
   width: 100%;
+  gap: 10px;
+  justify-content: start;
 }
 .panels .control-product .btn-party-edit .btn-party {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 1em;
   color: #13F2F2;
   border: solid #13F2F2 3px;
   background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
   padding: 5px 15px;
-  width: 27%;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.7rem;
   border-radius: 30px;
   cursor: pointer;
+  transition: 0.3s;
+  box-sizing: border-box;
+  animation-name: entrance-animation;
+  animation-duration: 1.5s;
 }
 .panels .control-product .btn-party-edit .btn-party:hover {
   box-shadow: 0 0 20px rgba(19, 242, 242, 0.231372549);
+  transition: 0.3s;
 }
 .panels .control-product .container-btn-colors {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   flex-wrap: wrap;
+  width: 100%;
   gap: 10px;
-  justify-content: space-between;
+  position: relative;
+  padding-top: 30px;
+}
+.panels .control-product .container-btn-colors::before {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: #0B1726;
+  border-radius: 30px;
+  animation-name: entrace-animation-horizontal;
+  animation-duration: 1s;
+  position: absolute;
 }
 .panels .control-product .container-btn-colors .btn-color {
   display: flex;
-  justify-content: center;
-  width: 30%;
+  justify-content: start;
   align-items: center;
+  background-color: #0B1726;
+  color: #F2F2F2;
+  gap: 10px;
   padding: 5px 15px;
-  border-radius: 30px;
   font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  border-radius: 30px;
   cursor: pointer;
+  transition: 0.3s;
+  box-sizing: border-box;
+  animation-name: entrance-animation;
+  animation-duration: 1.5s;
 }
 .panels .control-product .container-btn-colors .btn-color:hover {
-  box-shadow: 0 0 20px rgba(19, 242, 242, 0.231372549);
+  transition: 0.3s;
+  background-color: #111D40;
 }
 
 @keyframes entrance-animation {
@@ -254,6 +293,17 @@ button, input {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+@keyframes entrace-animation-horizontal {
+  0% {
+    scale: 50%;
+    opacity: 0;
+    transform: translateX(-15px);
+  }
+  100% {
+    scale: 100%;
+    transform: translateX(0);
   }
 }
 .container-main {
@@ -330,39 +380,73 @@ button, input {
   filter: brightness(50%) contrast(1.5) saturate(0);
 }
 
-.btn-color-vermelho {
+.btn-color-vermelho::before {
+  content: "";
+  width: 20px;
+  height: 20px;
   background-color: #d32d2d;
-  color: #ffffff;
+  border-radius: 30px;
+  animation: entrace-animation-horizontal 1s;
 }
 
-.btn-color-vinho {
-  background-color: #551626;
-  color: #ffffff;
-}
-
-.btn-color-royal {
+.btn-color-royal::before {
+  content: "";
+  width: 20px;
+  height: 20px;
   background-color: #292cd8;
-  color: #ffffff;
+  border-radius: 30px;
+  animation-name: entrace-animation-horizontal;
+  animation-duration: 1s;
 }
 
-.btn-color-amarelo {
+.btn-color-amarelo::before {
+  content: "";
+  width: 20px;
+  height: 20px;
   background-color: #e7d427;
-  color: #333333;
+  border-radius: 30px;
+  animation-name: entrace-animation-horizontal;
+  animation-duration: 1s;
 }
 
-.btn-color-roxo {
+.btn-color-roxo::before {
+  content: "";
+  width: 20px;
+  height: 20px;
   background-color: #412f85;
-  color: #ffffff;
+  border-radius: 30px;
+  animation-name: entrace-animation-horizontal;
+  animation-duration: 1s;
 }
 
-.btn-color-lilas {
+.btn-color-preto::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: #0e0e0e;
+  border-radius: 30px;
+  animation-name: entrace-animation-horizontal;
+  animation-duration: 1s;
+}
+
+.btn-color-lilas::before {
+  content: "";
+  width: 20px;
+  height: 20px;
   background-color: #7753a0;
-  color: #ffffff;
+  border-radius: 30px;
+  animation-name: entrace-animation-horizontal;
+  animation-duration: 1s;
 }
 
-.btn-color-preto {
-  background-color: #1d1d1d;
-  color: #ffffff;
+.btn-color-vinho::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: #551626;
+  border-radius: 30px;
+  animation-name: entrace-animation-horizontal;
+  animation-duration: 1s;
 }
 
 .myStudioPro {

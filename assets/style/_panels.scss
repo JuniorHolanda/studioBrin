@@ -1,4 +1,3 @@
-@import'variable';
 
 .panels{
     display: flex;
@@ -45,7 +44,8 @@
     .control-product{
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: center;
+        gap: 30px;
         align-items: center;
         background-color: $tirth-color;
         padding: 30px;
@@ -54,53 +54,83 @@
 
         //container botões das partes
         .btn-party-edit{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
             flex-wrap: wrap;
-            gap: 30px;
             width: 100%;
+            gap: 10px;
+            justify-content: start;
 
             //botões das partes
             .btn-party{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                font-size: 1em;
+               
                 color: $fourt-color;
                 border: solid $fourt-color 3px;
                 background-color: transparent;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 5px;
                 padding: 5px 15px;
-                width: 27%;
+                font-weight: 600;
+                text-transform: uppercase;
+                font-size: .7rem;
                 border-radius: 30px;
                 cursor: pointer;
+                transition: .3s;
+                box-sizing: border-box;
+                animation-name: entrance-animation;
+                animation-duration: 1.5s;
                 
-                    &:hover {
-                        box-shadow: 0 0 20px $glass-color;
-                    }
+                &:hover {
+                    box-shadow: 0 0 20px $glass-color;
+                    transition: .3s;
+                }
             }
         }
         //container botões de cores
         .container-btn-colors{
-            display: flex;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
             flex-wrap: wrap;
+            width: 100%;
             gap: 10px;
-            justify-content: space-between;
-            
+            position: relative;
+            padding-top: 30px;
+
+            &::before {
+                content: "";
+                width: 100%;
+                height: 3px;
+                background-color: $second-color;
+                border-radius: 30px;
+                animation-name: entrace-animation-horizontal;
+                animation-duration: 1s;
+                position: absolute;
+              }
+
             // botões de cores
             .btn-color{
                 display: flex;
-                justify-content: center;
-                width: 30%;
+                justify-content: start;
                 align-items: center;
+                background-color: $second-color;
+                color: $sixth-color;
+                gap: 10px;
                 padding: 5px 15px;
-                border-radius: 30px;
                 font-weight: 600;
+                text-transform: uppercase;
+                font-size: .7rem;
+                border-radius: 30px;
                 cursor: pointer;
+                transition: .3s;
+                box-sizing: border-box;
+                animation-name: entrance-animation;
+                animation-duration: 1.5s;
 
                 &:hover {
-                    box-shadow: 0 0 20px $glass-color;
+                    transition: .3s;
+                    background-color: $primary-color;
                 }
             }
         }
