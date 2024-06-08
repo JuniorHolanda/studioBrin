@@ -321,17 +321,17 @@ button, input {
 }
 .container-main .container-mockup .list-products {
   display: flex;
-  border-radius: 10px;
-  overflow: hidden;
-  cursor: pointer;
   animation-name: entrance-animation;
   animation-duration: 1s;
-}
-.container-main .container-mockup .list-products:hover {
-  box-shadow: 0 0 20px rgba(19, 242, 242, 0.231372549);
+  gap: 30px;
 }
 .container-main .container-mockup .list-products .list-product-img {
   max-width: 100px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.container-main .container-mockup .list-products .list-product-img:hover {
+  box-shadow: 0 0 20px rgba(19, 242, 242, 0.231372549);
 }
 
 .container-mockup {

@@ -18,10 +18,10 @@ containerBtnPartProduct.classList.add('btn-party-edit');
 export let btnPartProduct = '';
 
 //passa dinâmicamente os caminhos das imagens para as partes do produto e mostra no containerMain
-export function showMockup (ajuste , corpo , bolso , alca , ziper , vivo , tampa , debrum , base) {
+export function showMockup (ajuste , corpo , bolso , alca , ziper , vivo , tampa , debrum , base , detalhe) {
 
     // adiciona todos os parâmetros, inclusive os vazios recebidos numa lista com as partes dos produtos
-    const listMockupPart = [ ajuste , corpo , bolso , alca , ziper , vivo , tampa , debrum , base ];
+    const listMockupPart = [ ajuste , corpo , bolso , alca , ziper , vivo , tampa , debrum , base , detalhe ];
     
     // verifica se o container principal possui algum filho, a condição sempre será verdadeira
     if (containerForMain.childElementCount > 0) {
