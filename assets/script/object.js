@@ -35,41 +35,115 @@ class MoldProduct {
 
 // Lista com os produtos para serem iterados, as pastas com as partes do produtos devem ser nomeadas em camelCase e identica aos itens deste array, AJUSTE DENTRO DAS CONDIÇÕES DA REPETIÇÃO
 const listProduct = [
+  //bolsas
   "bolsaPraiaDuo",
   "bolsaTripCongresso",
   "bolsaPst",
+  "bolsaGraci",
+  "bolsaPraiaMiu",
+
+  //estojo
   "estojoTriang",
+
+  //diversos
   "miniBagVani",
+  "organizadorWish",
+
+  //necessaire
   "necessaireEvBolso",
   "necessaireCn",
+  "necessairePs",
+  "necessaireHope",
+  "necessaireVaniDuo",
+  "necessaireGran",
+
+  //termica
   "termicaJl",
+  "termicaAeTri",
+  "termicaGer",
+  "termicaMiu",
+
+  //mochila
   "mochilaAdvGrande",
+
+  //carteira
+  "carteiraSlim",
+
 ];
 
 // sempre que adicionar um produto é necessário adicionar a medida, seguindo a ordem cronológica
 const listMedidas = [
+  //bolsa
   "Lar - 10cm | Alt - 00cm | Comp - 00cm", //bolsaPraiaDuo
   "Lar - 10cm | Alt - 00cm | Comp - 00cm", //bolsaTripCongresso
   "Lar - 20cm | Alt - 00cm | Comp - 00cm", //bolsaPst
+  "Lar - 20cm | Alt - 00cm | Comp - 00cm", //bolsaGraci
+  "Lar - 20cm | Alt - 00cm | Comp - 00cm", //bolsaPraiaMiu
+
+  //estojo
   "Lar - 30cm | Alt - 00cm | Comp - 00cm", //estojoTriang
+
+  //diversos
   "Lar - 40cm | Alt - 00cm | Comp - 00cm", //miniBagVani
+  "Lar - 40cm | Alt - 00cm | Comp - 00cm", //organizadorWish
+
+  //necessaire
   "Lar - 50cm | Alt - 00cm | Comp - 00cm", //necessaireEvBolso
   "Lar - 50cm | Alt - 00cm | Comp - 00cm", //necessaireCnBolso
+  "Lar - 50cm | Alt - 00cm | Comp - 00cm", //necessairePs
+  "Lar - 50cm | Alt - 00cm | Comp - 00cm", //necessaireHope
+  "Lar - 50cm | Alt - 00cm | Comp - 00cm", //necessaireVaniDuo
+  "Lar - 50cm | Alt - 00cm | Comp - 00cm", //necessaireGran
+
+  //termica
   "Lar - 60cm | Alt - 00cm | Comp - 00cm", //termicaJl
+  "Lar - 60cm | Alt - 00cm | Comp - 00cm", //termicaAeTri
+  "Lar - 60cm | Alt - 00cm | Comp - 00cm", //termicaGer
+  "Lar - 60cm | Alt - 00cm | Comp - 00cm", //termicaMiu
+
+  //mochila
   "Lar - 60cm | Alt - 00cm | Comp - 00cm", //mochilaAdvGrande
+
+  //carteira
+  "Lar - 60cm | Alt - 00cm | Comp - 00cm", //carteiraSlim
 ];
 
 // assim como as medidas, essa lista precisa ser preenchida na ordem em que novos produtos são adicionados
 const listInfoProduct = [
+
+  //bolsa
   "Uma Bolsa perfeita para todas ocasiões", //bolsaPraiaDuo
   "Uma Bolsa perfeita para todas ocasiões", //bolsaTripCongresso
   "esta é outra bolsa", //bolsaPst
+  "esta é outra bolsa", //bolsaGraci
+  "esta é outra bolsa", //bolsaPraiaMiu
+  
+  //estojo
   "este é um estojo", //estojoTriang
+
+  //diversos
   "e isso uma minibag", //miniBagVani
+  "e isso uma organizador", //organizadorWish
+
+  //necessaire
   "essa necessaire", //necessaireEvBolso
-  "Lar - 50cm | Alt - 00cm | Comp - 00cm", //necessaireCnBolso
+  "essa necessaire", //necessaireCnBolso
+  "essa necessaire", //necessairePs
+  "essa necessaire", //necessaireHope
+  "essa necessaire", //necessaireVaniDuo
+  "essa necessaire", //necessaireGran
+
+  //termica
   "e essa é uma térmica", //termicaJl
+  "e essa é uma térmica", //termicaAeTri
+  "e essa é uma térmica", //termicaGer
+  "e essa é uma térmica", //termicaMiu
+
+  //mochila
   "e essa é uma mochila", //mochilaAdvGrande
+
+  //carteira
+  "e essa é uma mochila", //carteiraSlim
 ];
 
 // lista com as categorias dos objetos criados na iteração.
@@ -89,7 +163,6 @@ for (let i = 0; i < listProduct.length; i++) {
   const medida = listMedidas[i];
   const info = listInfoProduct[i];
   const ajuste = `assets/img/${nome}/ajuste.jpg`;
-  const corpo = `assets/img/${nome}/corpo.png`;
   const card = `assets/img/${nome}/card.jpg`;
 
   // propriedades que variam nos objetos
@@ -101,17 +174,69 @@ for (let i = 0; i < listProduct.length; i++) {
   let bolso = "";
   let base = "";
   let detalhe = "";
+  let corpo = "";
+  
+  // adiciona corpo aos aos produtos relativos
+
+  if (
+
+    //bolsa
+    nome === "bolsaPraiaDuo" ||
+    nome === "bolsaPst" ||
+    nome === "bolsaTripCongresso" ||
+    nome === "bolsaGraci" ||
+    
+    //estojo
+    nome === "estojoTriang" ||
+
+    //diversos
+    nome === "miniBagVani" ||
+
+    //mochila
+    nome === "mochilaAdvGrande" ||
+
+    //necessaire
+    nome === "necessaireCn" ||
+    nome === "necessaireEvBolso" ||
+    nome === "necessaireHope" ||
+    nome === "necessairePs" ||
+
+    //termica
+    nome === "termicaJl" ||
+    nome === "termicaAeTri" ||
+    nome === "termicaGer" ||
+    nome === "termicaMiu" ||
+    
+    //carteira
+    nome === "carteiraSlim"
+
+  ) {
+    corpo = `assets/img/${nome}/corpo.png`;
+  }
 
   // adiciona alça aos aos produtos relativos
 
   if (
+    //bolsa
     nome === "bolsaPraiaDuo" ||
     nome === "bolsaTripCongresso" ||
     nome === "bolsaPst" ||
+    nome === "bolsaGraci" ||
+    nome === "bolsaPraiaMiu" ||
+    
+
+    //diversos
     nome === "miniBagVani" ||
+
+    //termica
     nome === "termicaJl" ||
+    nome === "termicaAeTri" || 
+    nome === "termicaGer" || 
+    nome === "termicaMiu" ||
+
+    //necessaire
     nome === "necessaireCn"
-    //nome === ''
+
   ) {
     alca = `assets/img/${nome}/alca.png`;
   }
@@ -122,19 +247,32 @@ for (let i = 0; i < listProduct.length; i++) {
     nome === "bolsaTripCongresso" ||
     nome === "miniBagVani" ||
     nome === "necessaireEvBolso" ||
+
     nome === "termicaJl" ||
+    nome === "termicaGer" ||
+    nome === "termicaMiu" ||
+
     nome === "mochilaAdvGrande" ||
-    nome === "necessaireCn"
-    //nome === ''
+
+
+    nome === "necessaireCn" ||
+    nome === "necessairePs" ||
+    nome === "necessaireVaniDuo" ||
+    nome === "necessaireHope" ||
+    nome === "necessaireGran"
   ) {
     ziper = `assets/img/${nome}/ziper.png`;
   }
 
   // adiciona bolso aos aos produtos relativos
   if (
+    //necessaire
     nome === "necessaireEvBolso" ||
-    nome === "necessaireCn"
-    //nome === ''
+    nome === "necessaireCn" ||
+    nome === "necessairePs" ||
+
+    //carteira
+    nome === "carteiraSlim"
   ) {
     bolso = `assets/img/${nome}/bolso.png`;
   }
@@ -142,8 +280,13 @@ for (let i = 0; i < listProduct.length; i++) {
   // adiciona vivo aos aos produtos relativos
   if (
     nome === "termicaJl" ||
-    nome === "necessaireCn"
-    //nome === ''
+    nome === "termicaMiu" ||
+
+
+    nome === "necessaireCn" ||
+    nome === "necessairePs" ||
+
+    nome === "organizadorWish"
   ) {
     vivo = `assets/img/${nome}/vivo.png`;
   }
@@ -160,24 +303,35 @@ for (let i = 0; i < listProduct.length; i++) {
   // adiciona debrum aos aos produtos relativos
   if (
     nome === "bolsaPraiaDuo" ||
-    nome === "mochilaAdvGrande"
-    //nome === ''
+    nome === "mochilaAdvGrande" ||
+    nome === "necessairePs" ||
+    nome === "necessaireVaniDuo" ||
+    nome === "bolsaPraiaMiu" ||
+
+    nome === "termicaAeTri" ||
+    nome === "termicaGer"
+
   ) {
     debrum = `assets/img/${nome}/debrum.png`;
   }
 
   // adiciona base aos aos produtos relativos
   if (
-    nome === "bolsaPraiaDuo"
-    //nome === ''
+    nome === "bolsaPraiaDuo" ||
+    nome === "necessairePs" ||
+    nome === "necessaireVaniDuo"
   ) {
     base = `assets/img/${nome}/base.png`;
   }
 
   // adiciona detalhe aos aos produtos relativos
   if (
-    nome === "mochilaAdvGrande"
-    //nome === ''
+    nome === "mochilaAdvGrande" ||
+
+    nome === "necessaireGran" ||
+
+    nome === "organizadorWish"
+
   ) {
     detalhe = `assets/img/${nome}/detalhe.png`;
   }
