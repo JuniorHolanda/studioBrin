@@ -353,11 +353,11 @@ button, input {
 }
 
 [data-change-color=vermelho] {
-  filter: hue-rotate(245deg) brightness(56%) contrast(1.6);
+  filter: hue-rotate(245deg) brightness(70%) contrast(2);
 }
 
 [data-change-color=vinho] {
-  filter: hue-rotate(220deg) brightness(35%) contrast(1.4);
+  filter: hue-rotate(220deg) brightness(55%) contrast(1.4);
 }
 
 [data-change-color=royal] {
@@ -365,7 +365,7 @@ button, input {
 }
 
 [data-change-color=amarelo] {
-  filter: hue-rotate(300deg);
+  filter: hue-rotate(310deg) brightness(110%);
 }
 
 [data-change-color=roxo] {

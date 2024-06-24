@@ -181,7 +181,6 @@ for (let i = 0; i < listProduct.length; i++) {
   if (
 
     //bolsa
-    nome === "bolsaPraiaDuo" ||
     nome === "bolsaPst" ||
     nome === "bolsaTripCongresso" ||
     nome === "bolsaGraci" ||
@@ -304,7 +303,6 @@ for (let i = 0; i < listProduct.length; i++) {
   if (
     nome === "bolsaPraiaDuo" ||
     nome === "mochilaAdvGrande" ||
-    nome === "necessairePs" ||
     nome === "necessaireVaniDuo" ||
     nome === "bolsaPraiaMiu" ||
 
@@ -318,7 +316,6 @@ for (let i = 0; i < listProduct.length; i++) {
   // adiciona base aos aos produtos relativos
   if (
     nome === "bolsaPraiaDuo" ||
-    nome === "necessairePs" ||
     nome === "necessaireVaniDuo"
   ) {
     base = `assets/img/${nome}/base.png`;

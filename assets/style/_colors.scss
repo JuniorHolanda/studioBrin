@@ -1,17 +1,17 @@
 //Cores dos botões
 [data-change-color="vermelho"] {
-  filter: hue-rotate(245deg) brightness(56%) contrast(1.6);
+  filter: hue-rotate(245deg) brightness(70%) contrast(2);
 }
 
 [data-change-color="vinho"] {
-  filter: hue-rotate(220deg) brightness(35%) contrast(1.4);
+  filter: hue-rotate(220deg) brightness(55%) contrast(1.4);
 }
 
 [data-change-color="royal"] {
   filter: hue-rotate(100deg) brightness(70%) contrast(1.5);
 }
 [data-change-color="amarelo"] {
-  filter: hue-rotate(300deg);
+  filter: hue-rotate(310deg) brightness(110%);
 }
 [data-change-color="roxo"] {
   filter: hue-rotate(160deg) brightness(75%) contrast(1.2);
