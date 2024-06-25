@@ -219,6 +219,7 @@ for (let i = 0; i < listProduct.length; i++) {
 
     //diversos
     nome === "miniBagVani" ||
+    
 
     //mochila
     nome === "mochilaAdvGrande" ||
