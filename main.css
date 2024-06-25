@@ -314,13 +314,17 @@ button, input {
 }
 .container-main .container-mockup {
   display: flex;
+  width: 100%;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
   gap: 20px;
 }
 .container-main .container-mockup .list-products {
   display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
   animation-name: entrance-animation;
   animation-duration: 1s;
   gap: 30px;

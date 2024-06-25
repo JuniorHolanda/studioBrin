@@ -41,6 +41,11 @@ const listProduct = [
   "bolsaPst",
   "bolsaGraci",
   "bolsaPraiaMiu",
+  "bolsaAcademia",
+  "bolsaCarteiroHb",
+  "bolsaColg",
+  "bolsaPsico",
+  "bolsaSBag",
 
   //estojo
   "estojoTriang",
@@ -56,6 +61,9 @@ const listProduct = [
   "necessaireHope",
   "necessaireVaniDuo",
   "necessaireGran",
+  "necessaireEv150907",
+  "necessaireVaniVisor",
+
 
   //termica
   "termicaJl",
@@ -79,6 +87,11 @@ const listMedidas = [
   "Lar - 20cm | Alt - 00cm | Comp - 00cm", //bolsaPst
   "Lar - 20cm | Alt - 00cm | Comp - 00cm", //bolsaGraci
   "Lar - 20cm | Alt - 00cm | Comp - 00cm", //bolsaPraiaMiu
+  "Lar - 20cm | Alt - 00cm | Comp - 00cm", //bolsaAcademia
+  "Lar - 20cm | Alt - 00cm | Comp - 00cm", //bolsaCarteiroHb
+  "Lar - 20cm | Alt - 00cm | Comp - 00cm", //bolsaColg
+  "Lar - 20cm | Alt - 00cm | Comp - 00cm", //bolsaPsico
+  "Lar - 20cm | Alt - 00cm | Comp - 00cm", //bolsaSBag
 
   //estojo
   "Lar - 30cm | Alt - 00cm | Comp - 00cm", //estojoTriang
@@ -94,6 +107,9 @@ const listMedidas = [
   "Lar - 50cm | Alt - 00cm | Comp - 00cm", //necessaireHope
   "Lar - 50cm | Alt - 00cm | Comp - 00cm", //necessaireVaniDuo
   "Lar - 50cm | Alt - 00cm | Comp - 00cm", //necessaireGran
+  "Lar - 50cm | Alt - 00cm | Comp - 00cm", //necessaireEv150907
+  "Lar - 50cm | Alt - 00cm | Comp - 00cm", //necessaireVaniVisor
+  
 
   //termica
   "Lar - 60cm | Alt - 00cm | Comp - 00cm", //termicaJl
@@ -117,6 +133,11 @@ const listInfoProduct = [
   "esta é outra bolsa", //bolsaPst
   "esta é outra bolsa", //bolsaGraci
   "esta é outra bolsa", //bolsaPraiaMiu
+  "esta é outra bolsa", //bolsaAcademia
+  "esta é outra bolsa", //bolsaCarteiroHb
+  "esta é outra bolsa", //bolsaColg
+  "esta é outra bolsa", //bolsaPsico
+  "esta é outra bolsa", //bolsaSBag
   
   //estojo
   "este é um estojo", //estojoTriang
@@ -132,6 +153,8 @@ const listInfoProduct = [
   "essa necessaire", //necessaireHope
   "essa necessaire", //necessaireVaniDuo
   "essa necessaire", //necessaireGran
+  "essa necessaire", //necessaireEv150907
+  "essa necessaire", //necessaireVaniVisor
 
   //termica
   "e essa é uma térmica", //termicaJl
@@ -184,6 +207,12 @@ for (let i = 0; i < listProduct.length; i++) {
     nome === "bolsaPst" ||
     nome === "bolsaTripCongresso" ||
     nome === "bolsaGraci" ||
+    nome === "bolsaAcademia" ||
+    nome === "bolsaCarteiroHb" ||
+    nome === "bolsaColg" ||
+    nome === "bolsaPsico" ||
+    nome === "bolsaPst" ||
+    nome === "bolsaSBag" ||
     
     //estojo
     nome === "estojoTriang" ||
@@ -199,6 +228,8 @@ for (let i = 0; i < listProduct.length; i++) {
     nome === "necessaireEvBolso" ||
     nome === "necessaireHope" ||
     nome === "necessairePs" ||
+    nome === "necessaireEv150907" ||
+    nome === "necessaireVaniVisor" ||
 
     //termica
     nome === "termicaJl" ||
@@ -222,6 +253,12 @@ for (let i = 0; i < listProduct.length; i++) {
     nome === "bolsaPst" ||
     nome === "bolsaGraci" ||
     nome === "bolsaPraiaMiu" ||
+    nome === "bolsaAcademia" ||
+    nome === "bolsaCarteiroHb" ||
+    nome === "bolsaColg" ||
+    nome === "bolsaPsico" ||
+    nome === "bolsaPst" ||
+    nome === "bolsaSBag" ||
     
 
     //diversos
@@ -246,6 +283,10 @@ for (let i = 0; i < listProduct.length; i++) {
     nome === "bolsaTripCongresso" ||
     nome === "miniBagVani" ||
     nome === "necessaireEvBolso" ||
+    nome === "bolsaAcademia" ||
+    nome === "bolsaColg" ||
+    nome === "bolsaPsico" ||
+    nome === "bolsaSBag" ||
 
     nome === "termicaJl" ||
     nome === "termicaGer" ||
@@ -258,13 +299,21 @@ for (let i = 0; i < listProduct.length; i++) {
     nome === "necessairePs" ||
     nome === "necessaireVaniDuo" ||
     nome === "necessaireHope" ||
-    nome === "necessaireGran"
+    nome === "necessaireGran" ||
+    nome === "necessaireEv150907" ||
+    nome === "necessaireVaniVisor"
   ) {
     ziper = `assets/img/${nome}/ziper.png`;
   }
 
   // adiciona bolso aos aos produtos relativos
   if (
+    //bolsa
+    nome === "bolsaCarteiroHb" ||
+    nome === "bolsaColg" ||
+    nome === "bolsaPsico" ||
+    nome === "bolsaSBag" ||
+
     //necessaire
     nome === "necessaireEvBolso" ||
     nome === "necessaireCn" ||
@@ -278,13 +327,19 @@ for (let i = 0; i < listProduct.length; i++) {
 
   // adiciona vivo aos aos produtos relativos
   if (
+    //bolsa
+    nome === "bolsaAcademia" ||
+    nome === "bolsaCarteiroHb" ||
+
+    //termica
     nome === "termicaJl" ||
     nome === "termicaMiu" ||
 
-
+    //necessaire
     nome === "necessaireCn" ||
     nome === "necessairePs" ||
 
+    //diversos
     nome === "organizadorWish"
   ) {
     vivo = `assets/img/${nome}/vivo.png`;
@@ -305,6 +360,8 @@ for (let i = 0; i < listProduct.length; i++) {
     nome === "mochilaAdvGrande" ||
     nome === "necessaireVaniDuo" ||
     nome === "bolsaPraiaMiu" ||
+    nome === "bolsaColg" ||
+ 
 
     nome === "termicaAeTri" ||
     nome === "termicaGer"
@@ -316,7 +373,10 @@ for (let i = 0; i < listProduct.length; i++) {
   // adiciona base aos aos produtos relativos
   if (
     nome === "bolsaPraiaDuo" ||
-    nome === "necessaireVaniDuo"
+
+    //necessaire
+    nome === "necessaireVaniDuo" ||
+    nome === "necessaireVaniVisor"
   ) {
     base = `assets/img/${nome}/base.png`;
   }
@@ -326,6 +386,8 @@ for (let i = 0; i < listProduct.length; i++) {
     nome === "mochilaAdvGrande" ||
 
     nome === "necessaireGran" ||
+    nome === "necessaireVaniVisor" ||
+
 
     nome === "organizadorWish"
 
