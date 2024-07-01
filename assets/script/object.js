@@ -61,7 +61,6 @@ const listProduct = [
   "necessaireHope",
   "necessaireVaniDuo",
   "necessaireGran",
-  "necessaireEv150907",
   "necessaireVaniVisor",
 
 
@@ -107,7 +106,6 @@ const listMedidas = [
   "Lar - 50cm | Alt - 00cm | Comp - 00cm", //necessaireHope
   "Lar - 50cm | Alt - 00cm | Comp - 00cm", //necessaireVaniDuo
   "Lar - 50cm | Alt - 00cm | Comp - 00cm", //necessaireGran
-  "Lar - 50cm | Alt - 00cm | Comp - 00cm", //necessaireEv150907
   "Lar - 50cm | Alt - 00cm | Comp - 00cm", //necessaireVaniVisor
   
 
@@ -153,7 +151,6 @@ const listInfoProduct = [
   "essa necessaire", //necessaireHope
   "essa necessaire", //necessaireVaniDuo
   "essa necessaire", //necessaireGran
-  "essa necessaire", //necessaireEv150907
   "essa necessaire", //necessaireVaniVisor
 
   //termica
@@ -229,7 +226,6 @@ for (let i = 0; i < listProduct.length; i++) {
     nome === "necessaireEvBolso" ||
     nome === "necessaireHope" ||
     nome === "necessairePs" ||
-    nome === "necessaireEv150907" ||
     nome === "necessaireVaniVisor" ||
 
     //termica
@@ -301,7 +297,6 @@ for (let i = 0; i < listProduct.length; i++) {
     nome === "necessaireVaniDuo" ||
     nome === "necessaireHope" ||
     nome === "necessaireGran" ||
-    nome === "necessaireEv150907" ||
     nome === "necessaireVaniVisor"
   ) {
     ziper = `assets/img/${nome}/ziper.png`;
