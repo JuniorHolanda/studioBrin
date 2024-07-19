@@ -3,7 +3,20 @@ import { controlForProducts } from "./mockup.js";
 export let btnColor = "";
 
 //lista de cores
-const listBtnColor = ["vermelho", "royal", "amarelo", "roxo", "preto", "vinho", "lilas" , "branco"];
+const listBtnColor = [
+  "vermelho",
+  "royal",
+  "amarelo",
+  "roxo",
+  "preto",
+  "vinho",
+  "lilas",
+  "branco",
+  "pink",
+  "cinza",
+  "musgo",
+  "marinho"
+];
 export const containerBtnColors = document.createElement("div");
 containerBtnColors.classList.add("container-btn-colors");
 
