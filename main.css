@@ -112,6 +112,7 @@ button, input {
   padding: 20px;
   width: 100%;
   background-color: #0B1726;
+  border: solid red;
 }
 .container-panel .container-category {
   display: flex;
@@ -165,6 +166,7 @@ button, input {
 }
 
 .panels {
+  border: solid rgb(0, 174, 255);
   display: flex;
   gap: 20px;
   width: 100%;
@@ -202,6 +204,7 @@ button, input {
   border-radius: 30px;
 }
 .panels .control-product {
+  border: solid saddlebrown;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -213,12 +216,12 @@ button, input {
   width: 50%;
 }
 .panels .control-product .btn-party-edit {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  border: solid hotpink;
+  display: flex;
   flex-wrap: wrap;
   width: 100%;
   gap: 10px;
-  justify-content: start;
+  justify-content: center;
 }
 .panels .control-product .btn-party-edit .btn-party {
   color: #13F2F2;
@@ -244,8 +247,9 @@ button, input {
   transition: 0.3s;
 }
 .panels .control-product .container-btn-colors {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  border: solid goldenrod;
+  display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
   width: 100%;
   gap: 10px;
@@ -263,16 +267,18 @@ button, input {
   position: absolute;
 }
 .panels .control-product .container-btn-colors .btn-color {
+  border: solid darkblue;
   display: flex;
   justify-content: start;
   align-items: center;
+  width: 48%;
   background-color: #0B1726;
   color: #F2F2F2;
   gap: 10px;
   padding: 5px 15px;
   font-weight: 600;
   text-transform: uppercase;
-  font-size: 0.7rem;
+  font-size: calc(0.5rem + 0.2vw);
   border-radius: 30px;
   cursor: pointer;
   transition: 0.3s;
@@ -406,8 +412,8 @@ button, input {
 
 .btn-color-vermelho::before {
   content: "";
-  width: 20px;
-  height: 20px;
+  min-width: 20px;
+  min-height: 20px;
   background-color: #d32d2d;
   border-radius: 30px;
   animation: entrace-animation-horizontal 1s;
@@ -415,8 +421,8 @@ button, input {
 
 .btn-color-royal::before {
   content: "";
-  width: 20px;
-  height: 20px;
+  min-width: 20px;
+  min-height: 20px;
   background-color: #292cd8;
   border-radius: 30px;
   animation-name: entrace-animation-horizontal;
@@ -425,8 +431,8 @@ button, input {
 
 .btn-color-amarelo::before {
   content: "";
-  width: 20px;
-  height: 20px;
+  min-width: 20px;
+  min-height: 20px;
   background-color: #e7d427;
   border-radius: 30px;
   animation-name: entrace-animation-horizontal;
@@ -435,8 +441,8 @@ button, input {
 
 .btn-color-roxo::before {
   content: "";
-  width: 20px;
-  height: 20px;
+  min-width: 20px;
+  min-height: 20px;
   background-color: #412f85;
   border-radius: 30px;
   animation-name: entrace-animation-horizontal;
@@ -445,8 +451,8 @@ button, input {
 
 .btn-color-preto::before {
   content: "";
-  width: 20px;
-  height: 20px;
+  min-width: 20px;
+  min-height: 20px;
   background-color: #0e0e0e;
   border-radius: 30px;
   animation-name: entrace-animation-horizontal;
@@ -455,8 +461,8 @@ button, input {
 
 .btn-color-lilas::before {
   content: "";
-  width: 20px;
-  height: 20px;
+  min-width: 20px;
+  min-height: 20px;
   background-color: #7753a0;
   border-radius: 30px;
   animation-name: entrace-animation-horizontal;
@@ -465,8 +471,8 @@ button, input {
 
 .btn-color-vinho::before {
   content: "";
-  width: 20px;
-  height: 20px;
+  min-width: 20px;
+  min-height: 20px;
   background-color: #551626;
   border-radius: 30px;
   animation-name: entrace-animation-horizontal;

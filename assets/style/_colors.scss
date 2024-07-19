@@ -46,8 +46,8 @@
 
   &::before {
     content: "";
-    width: 20px;
-    height: 20px;
+    min-width: 20px;
+    min-height: 20px;
     background-color: #d32d2d;
     border-radius: 30px;
     animation: entrace-animation-horizontal 1s;
@@ -57,8 +57,8 @@
 .btn-color-royal {
   &::before {
     content: "";
-    width: 20px;
-    height: 20px;
+    min-width: 20px;
+    min-height: 20px;
     background-color: #292cd8;
     border-radius: 30px;
     animation-name: entrace-animation-horizontal;
@@ -69,8 +69,8 @@
 .btn-color-amarelo {
   &::before {
     content: "";
-    width: 20px;
-    height: 20px;
+    min-width: 20px;
+    min-height: 20px;
     background-color: #e7d427;
     border-radius: 30px;
     animation-name: entrace-animation-horizontal;
@@ -81,8 +81,8 @@
 .btn-color-roxo {
   &::before {
     content: "";
-    width: 20px;
-    height: 20px;
+    min-width: 20px;
+    min-height: 20px;
     background-color: #412f85;
     border-radius: 30px;
     animation-name: entrace-animation-horizontal;
@@ -92,8 +92,8 @@
 .btn-color-preto {
   &::before {
     content: "";
-    width: 20px;
-    height: 20px;
+    min-width: 20px;
+    min-height: 20px;
     background-color: #0e0e0e;
     border-radius: 30px;
     animation-name: entrace-animation-horizontal;
@@ -104,8 +104,8 @@
 .btn-color-lilas {
   &::before {
     content: "";
-    width: 20px;
-    height: 20px;
+    min-width: 20px;
+    min-height: 20px;
     background-color: #7753a0;
     border-radius: 30px;
     animation-name: entrace-animation-horizontal;
@@ -116,8 +116,8 @@
 .btn-color-vinho {
   &::before {
     content: "";
-    width: 20px;
-    height: 20px;
+    min-width: 20px;
+    min-height: 20px;
     background-color: #551626;
     border-radius: 30px;
     animation-name: entrace-animation-horizontal;

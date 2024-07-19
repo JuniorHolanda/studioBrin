@@ -1,5 +1,6 @@
 
 .panels{
+    border: solid rgb(0, 174, 255);
     display: flex;
     gap: 20px;
     width: 100%;
@@ -42,6 +43,7 @@
 
     // container dos botões de edição
     .control-product{
+        border: solid saddlebrown;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -54,16 +56,15 @@
 
         //container botões das partes
         .btn-party-edit{
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
+            border: solid hotpink;
+            display: flex;
             flex-wrap: wrap;
             width: 100%;
             gap: 10px;
-            justify-content: start;
+            justify-content: center;
 
             //botões das partes
             .btn-party{
-               
                 color: $fourt-color;
                 border: solid $fourt-color 3px;
                 background-color: transparent;
@@ -90,8 +91,9 @@
         }
         //container botões de cores
         .container-btn-colors{
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
+            border: solid goldenrod;
+            display: flex;
+            justify-content: space-between;
             flex-wrap: wrap;
             width: 100%;
             gap: 10px;
@@ -111,16 +113,18 @@
 
             // botões de cores
             .btn-color{
+                border: solid darkblue;
                 display: flex;
                 justify-content: start;
                 align-items: center;
+                width: 48%;
                 background-color: $second-color;
                 color: $sixth-color;
                 gap: 10px;
                 padding: 5px 15px;
                 font-weight: 600;
                 text-transform: uppercase;
-                font-size: .7rem;
+                font-size: calc(.5rem + 0.2vw);
                 border-radius: 30px;
                 cursor: pointer;
                 transition: .3s;
