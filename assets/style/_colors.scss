@@ -30,7 +30,11 @@
   filter: brightness(50%) contrast(1.5) saturate(0);
 }
 [data-change-color="branco"] {
-  filter: brightness(150%) contrast(2) grayscale(100%);
+   filter: brightness(140%) contrast(1) grayscale(100%) ;
+}
+
+[data-change-color="cru"] {
+  filter: hue-rotate(310deg) brightness(120%) contrast(1) grayscale(85%) ;
 }
 [data-change-color="cinza"] {
   filter: brightness(70%) contrast(2) grayscale(100%);
