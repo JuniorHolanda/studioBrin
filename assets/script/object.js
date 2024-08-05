@@ -35,23 +35,16 @@ class MoldProduct {
 
 // Lista com os produtos para serem iterados, as pastas com as partes do produtos devem ser nomeadas em camelCase e identica aos itens deste array, AJUSTE DENTRO DAS CONDIÇÕES DA REPETIÇÃO
 const listProduct = [
-  //bolsas
   "bolsaPraiaDuo",
   "bolsaTripCongresso",
   "bolsaPst",
   "bolsaGraci",
   "bolsaPraiaMiu",
-  "bolsaAcademia",
-  "bolsaCarteiroHb",
-  "bolsaColg",
-  "bolsaPsico",
-  "bolsaSBag",
 
   //estojo
   "estojoTriang",
 
   //diversos
-  "miniBagVani",
   "organizadorWish",
 
   //necessaire
@@ -68,7 +61,6 @@ const listProduct = [
   "termicaJl",
   "termicaAeTri",
   "termicaGer",
-  "termicaMiu",
 
   //mochila
   "mochilaAdvGrande",
@@ -86,17 +78,11 @@ const listMedidas = [
   "Lar - 20cm | Alt - 00cm | Comp - 00cm", //bolsaPst
   "Lar - 20cm | Alt - 00cm | Comp - 00cm", //bolsaGraci
   "Lar - 20cm | Alt - 00cm | Comp - 00cm", //bolsaPraiaMiu
-  "Lar - 20cm | Alt - 00cm | Comp - 00cm", //bolsaAcademia
-  "Lar - 20cm | Alt - 00cm | Comp - 00cm", //bolsaCarteiroHb
-  "Lar - 20cm | Alt - 00cm | Comp - 00cm", //bolsaColg
-  "Lar - 20cm | Alt - 00cm | Comp - 00cm", //bolsaPsico
-  "Lar - 20cm | Alt - 00cm | Comp - 00cm", //bolsaSBag
 
   //estojo
   "Lar - 30cm | Alt - 00cm | Comp - 00cm", //estojoTriang
 
   //diversos
-  "Lar - 40cm | Alt - 00cm | Comp - 00cm", //miniBagVani
   "Lar - 40cm | Alt - 00cm | Comp - 00cm", //organizadorWish
 
   //necessaire
@@ -113,7 +99,6 @@ const listMedidas = [
   "Lar - 60cm | Alt - 00cm | Comp - 00cm", //termicaJl
   "Lar - 60cm | Alt - 00cm | Comp - 00cm", //termicaAeTri
   "Lar - 60cm | Alt - 00cm | Comp - 00cm", //termicaGer
-  "Lar - 60cm | Alt - 00cm | Comp - 00cm", //termicaMiu
 
   //mochila
   "Lar - 60cm | Alt - 00cm | Comp - 00cm", //mochilaAdvGrande
@@ -131,17 +116,11 @@ const listInfoProduct = [
   "esta é outra bolsa", //bolsaPst
   "esta é outra bolsa", //bolsaGraci
   "esta é outra bolsa", //bolsaPraiaMiu
-  "esta é outra bolsa", //bolsaAcademia
-  "esta é outra bolsa", //bolsaCarteiroHb
-  "esta é outra bolsa", //bolsaColg
-  "esta é outra bolsa", //bolsaPsico
-  "esta é outra bolsa", //bolsaSBag
   
   //estojo
   "este é um estojo", //estojoTriang
 
   //diversos
-  "e isso uma minibag", //miniBagVani
   "e isso uma organizador", //organizadorWish
 
   //necessaire
@@ -157,7 +136,6 @@ const listInfoProduct = [
   "e essa é uma térmica", //termicaJl
   "e essa é uma térmica", //termicaAeTri
   "e essa é uma térmica", //termicaGer
-  "e essa é uma térmica", //termicaMiu
 
   //mochila
   "e essa é uma mochila", //mochilaAdvGrande
@@ -204,18 +182,12 @@ for (let i = 0; i < listProduct.length; i++) {
     nome === "bolsaPst" ||
     nome === "bolsaTripCongresso" ||
     nome === "bolsaGraci" ||
-    nome === "bolsaAcademia" ||
-    nome === "bolsaCarteiroHb" ||
-    nome === "bolsaColg" ||
-    nome === "bolsaPsico" ||
     nome === "bolsaPst" ||
-    nome === "bolsaSBag" ||
     
     //estojo
     nome === "estojoTriang" ||
 
     //diversos
-    nome === "miniBagVani" ||
     
 
     //mochila
@@ -232,7 +204,6 @@ for (let i = 0; i < listProduct.length; i++) {
     nome === "termicaJl" ||
     nome === "termicaAeTri" ||
     nome === "termicaGer" ||
-    nome === "termicaMiu" ||
     
     //carteira
     nome === "carteiraSlim"
@@ -250,22 +221,15 @@ for (let i = 0; i < listProduct.length; i++) {
     nome === "bolsaPst" ||
     nome === "bolsaGraci" ||
     nome === "bolsaPraiaMiu" ||
-    nome === "bolsaAcademia" ||
-    nome === "bolsaCarteiroHb" ||
-    nome === "bolsaColg" ||
-    nome === "bolsaPsico" ||
     nome === "bolsaPst" ||
-    nome === "bolsaSBag" ||
     
 
     //diversos
-    nome === "miniBagVani" ||
 
     //termica
     nome === "termicaJl" ||
     nome === "termicaAeTri" || 
     nome === "termicaGer" || 
-    nome === "termicaMiu" ||
 
     //necessaire
     nome === "necessaireCn"
@@ -278,16 +242,10 @@ for (let i = 0; i < listProduct.length; i++) {
   if (
     nome === "estojoTriang" ||
     nome === "bolsaTripCongresso" ||
-    nome === "miniBagVani" ||
     nome === "necessaireEvBolso" ||
-    nome === "bolsaAcademia" ||
-    nome === "bolsaColg" ||
-    nome === "bolsaPsico" ||
-    nome === "bolsaSBag" ||
 
     nome === "termicaJl" ||
     nome === "termicaGer" ||
-    nome === "termicaMiu" ||
 
     nome === "mochilaAdvGrande" ||
 
@@ -305,10 +263,6 @@ for (let i = 0; i < listProduct.length; i++) {
   // adiciona bolso aos aos produtos relativos
   if (
     //bolsa
-    nome === "bolsaCarteiroHb" ||
-    nome === "bolsaColg" ||
-    nome === "bolsaPsico" ||
-    nome === "bolsaSBag" ||
 
     //necessaire
     nome === "necessaireEvBolso" ||
@@ -324,12 +278,9 @@ for (let i = 0; i < listProduct.length; i++) {
   // adiciona vivo aos aos produtos relativos
   if (
     //bolsa
-    nome === "bolsaAcademia" ||
-    nome === "bolsaCarteiroHb" ||
 
     //termica
     nome === "termicaJl" ||
-    nome === "termicaMiu" ||
 
     //necessaire
     nome === "necessaireCn" ||
@@ -355,9 +306,7 @@ for (let i = 0; i < listProduct.length; i++) {
     nome === "bolsaPraiaDuo" ||
     nome === "mochilaAdvGrande" ||
     nome === "necessaireVaniDuo" ||
-    nome === "bolsaPraiaMiu" ||
-    nome === "bolsaColg" ||
- 
+    nome === "bolsaPraiaMiu" || 
 
     nome === "termicaAeTri" ||
     nome === "termicaGer"
