@@ -16,7 +16,8 @@ const listBtnColor = [
   "cinza",
   "musgo",
   "marinho",
-  "cru"
+  "cru",
+  "laranja"
 ];
 export const containerBtnColors = document.createElement("div");
 containerBtnColors.classList.add("container-btn-colors");
